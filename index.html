@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta property="og:title" content="space page">
+<meta property="og:description" content="space page design it by html , tailwend and js">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ameer-dev-a.github.io/space/">
+<meta property="og:image" content="https://ameer-dev-a.github.io/space/background-home-desktop.jpg">
+<meta property="og:image:alt" content="space">
+
+    <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="overflow-hidden">
+      <header class=" h-screen 
+         bg-[url('assets/home/background-home-mobile.jpg')]
+      md:bg-[url('assets/home/background-home-tablet.jpg')]
+      lg:bg-[url('assets/home/background-home-desktop.jpg')] bg-no-repeat bg-cover bg-center ">
+
+        <nav class="menue w-full z-50
+                    flex flex-col md:flex-row justify-center 
+                    gap-50 lg:gap-90
+                    md:justify-items-center-safe items-center p-3
+                    translate-y-15 ">
+       <div class="w-full md:w-fit flex justify-between items-center ">
+         <img src="assets/shared/logo.svg" alt="icon-logo">
+         <img src="assets/shared/icon-hamburger.svg" alt="icon-hamburger" class="open block md:hidden ">
+         <img src="assets/shared/icon-close.svg" alt="icon-close" class="close hidden">
+       </div>
+         <ul class="bar backdrop-blur-md p-3 
+                   bg-transparent md:bg-white/20 
+                   hidden md:flex flex-col md:flex-row 
+                   [&>li]:ml-10 
+                   [&>li]:text-[20px]  
+                   [&>li]:font-mono 
+                   [&>li]:text-white 
+                   [&>li]:relative
+                   [&>li]:before:absolute
+                   [&>li]:before:bottom-0 
+                   [&>li]:before:left-0 
+                   [&>li]:opacity-100 
+                   [&>li]:before:w-0 
+                   [&>li]:hover:before:w-full 
+                   [&>li]:before:h-[2px] 
+                   [&>li]:before:bg-transparent
+                   [&>li]:hover:before:bg-white 
+                   [&>li]:hover:opacity-50  
+                   [&>li]:before:transition-all
+                   [&>li]:before:duration-500
+                  ">
+          <li><a href="#" class="active">00 Home</a></li>
+          <li><a href="destination.html"> 01 Destination</a></li>
+          <li><a href="crew.html">02 Crew</a></li>
+          <li><a href="technology.html"> 03 Technology</a></li>
+         </ul>
+        </nav>
+
+    <div class="  text-white text-center md:text-left
+                  grid grid-cols-1  md:grid-cols-2 gap-20 md:gap-40  items-center justify-center
+                absolute top-40 md:top-80  md:left-1/6">
+
+      <div class=" [&>p]:mt-6 p-3">
+         <p class="text-gray-400 text-[15px]"> So, you want to travel to</p>
+         <p class="text-6xl tracking-wide">Space</p>
+         <p  class="text-gray-400 text-[15px]">  Let’s face it; if you want to go to space, you might as well genuinely go to 
+  outer space and not hover kind of on the edge of it. Well sit back, and relax 
+  because we’ll give you a truly out of this world experience!</p>
+      </div>
+
+            <button class="ml-auto mr-auto w-70 h-70 text-5xl  rounded-[500px]
+                  cursor-pointer bg-amber-50 text-black
+                  animate-pulse transition 
+                  hover:animate-none hover:shadow-[0_0_290px_rgba(70,80,30,0.6)]
+                  "><a href="destination.html">explore</a></button>
+     </div>
+
+
+
+
+  </header>
+  
+     <script>
+     </script>
+
+  
+
+  
+ 
+  
+   
+
+ 
+  
+
+
+  
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

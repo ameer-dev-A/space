@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta property="og:title" content="space page">
+<meta property="og:description" content="space page design it by html , tailwend and js">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ameer-dev-a.github.io/space/">
+<meta property="og:image" content="https://ameer-dev-a.github.io/space/background-home-desktop.jpg">
+<meta property="og:image:alt" content="space">
+
+    <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="overflow-hidden">
+      <header class=" h-screen 
+         bg-[url('assets/technology/background-technology-mobile.jpg')]
+      md:bg-[url('assets/technology/background-technology-tablet.jpg')]
+      lg:bg-[url('assets/technology/background-technology-desktop.jpg')] 
+      bg-no-repeat bg-cover bg-center ">
+
+        <nav class="menue w-full z-50
+                    flex flex-col md:flex-row justify-center 
+                    gap-50 lg:gap-90
+                    md:justify-items-center-safe items-center p-3
+                    translate-y-15 ">
+       <div class="w-full md:w-fit flex justify-between items-center ">
+         <img src="assets/shared/logo.svg" alt="icon-logo">
+         <img src="assets/shared/icon-hamburger.svg" alt="icon-hamburger" class="open block md:hidden ">
+         <img src="assets/shared/icon-close.svg" alt="icon-close" class="close hidden">
+       </div>
+         <ul class="bar backdrop-blur-md p-3 
+                   bg-transparent md:bg-white/20 
+                   hidden md:flex flex-col md:flex-row 
+                   [&>li]:ml-10 
+                   [&>li]:text-[20px]  
+                   [&>li]:font-mono 
+                   [&>li]:text-white 
+                   [&>li]:relative
+                   [&>li]:before:absolute
+                   [&>li]:before:bottom-0 
+                   [&>li]:before:left-0 
+                   [&>li]:opacity-100 
+                   [&>li]:before:w-0 
+                   [&>li]:hover:before:w-full 
+                   [&>li]:before:h-[2px] 
+                   [&>li]:before:bg-transparent
+                   [&>li]:hover:before:bg-white 
+                   [&>li]:hover:opacity-50 
+                   [&>li]:before:transition-all
+                   [&>li]:before:duration-500
+                  ">
+          <li><a href="index.html" >00 Home</a></li>
+          <li><a href="destination.html" > 01 Destination</a></li>
+          <li><a href="crew.html" >02 Crew</a></li>
+          <li><a href="technology.html" class="active"> 03 Technology</a></li>
+         </ul>
+        </nav>
+
+
+<!-- ----------------------technology-------------------- -->
+     <div class=" absolute top-30 md:top-50  md:left-1/6
+          text-center md:text-left
+          grid grid-cols-1 md:grid-cols-2  items-center justify-center ">       
+
+     <div class="flex flex-col md:flex-row gap-10">
+
+     <div class="spans flex flex-row md:flex-col justify-center items-center gap-5 mt-5 [&>span]:cursor-pointer">
+        <span class=" active3 text-2xl text-white border-2 border-white rounded-4xl w-10 md:w-15 h-10 md:h-15 
+        text-center 
+        flex items-center justify-center">1</span>
+        <span class="  text-2xl text-white border-2 border-white rounded-4xl w-10 md:w-15 h-10 md:h-15 text-center 
+        flex items-center justify-center">2</span>
+        <span class="  text-2xl text-white border-2 border-white rounded-4xl w-10 md:w-15 h-10 md:h-15 text-center 
+        flex items-center justify-center">3</span>
+    </div>
+
+<div class="mb-20 mr-0 md:mr-20 "> 
+    <p class="text-gray-400 text-[15px] md:text-[25px]  ">  03 Space launch 101</p>
+     <p class="text-[20px] text-gray-400  mt-10">The terminology…</p>
+    <h1 class="head-tec text-6xl font-bold  text-white">Launch vehicle</h1>
+    <p class="text-tec text-gray-400 p-3">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+</div>
+
+</div>
+
+ 
+        <div class=" text-white text-center mt-0 md:mt-10 ml-auto mr-auto">
+            <img src="assets/technology/image-launch-vehicle-portrait.jpg" class="img-tec 
+                  ml-auto mr-auto w-50 md:w-90">
+          </div> 
+
+     </div>
+
+      <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

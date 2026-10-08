@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta property="og:title" content="space page">
+<meta property="og:description" content="space page design it by html , tailwend and js">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ameer-dev-a.github.io/space/">
+<meta property="og:image" content="https://ameer-dev-a.github.io/space/background-home-desktop.jpg">
+<meta property="og:image:alt" content="space">
+
+    <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="overflow-hidden">
+      <header class=" h-screen 
+         bg-[url('assets/crew/background-crew-mobile.jpg')]
+      md:bg-[url('assets/crew/background-crew-tablet.jpg')]
+      lg:bg-[url('assets/crew/background-crew-desktop.jpg')] 
+      bg-no-repeat bg-cover bg-center ">
+
+        <nav class="menue w-full z-50
+                    flex flex-col md:flex-row justify-center 
+                    gap-50 lg:gap-90
+                    md:justify-items-center-safe items-center p-3
+                    translate-y-15 ">
+       <div class="w-full md:w-fit flex justify-between items-center ">
+         <img src="assets/shared/logo.svg" alt="icon-logo">
+         <img src="assets/shared/icon-hamburger.svg" alt="icon-hamburger" class="open block md:hidden ">
+         <img src="assets/shared/icon-close.svg" alt="icon-close" class="close hidden">
+       </div>
+         <ul class="bar backdrop-blur-md p-3 
+                   bg-transparent md:bg-white/20 
+                   hidden md:flex flex-col md:flex-row 
+                   [&>li]:ml-10 
+                   [&>li]:text-[20px]  
+                   [&>li]:font-mono 
+                   [&>li]:text-white 
+                   [&>li]:relative
+                   [&>li]:before:absolute
+                   [&>li]:before:bottom-0 
+                   [&>li]:before:left-0 
+                   [&>li]:opacity-100 
+                   [&>li]:before:w-0 
+                   [&>li]:hover:before:w-full 
+                   [&>li]:before:h-[2px] 
+                   [&>li]:before:bg-transparent
+                   [&>li]:hover:before:bg-white 
+                   [&>li]:hover:opacity-50 
+                   [&>li]:before:transition-all
+                   [&>li]:before:duration-500
+                  ">
+          <li><a href="index.html" >00 Home</a></li>
+          <li><a href="destination.html" > 01 Destination</a></li>
+          <li><a href="crew.html" class="active">02 Crew</a></li>
+          <li><a href="technology.html"> 03 Technology</a></li>
+         </ul>
+        </nav>
+
+
+<!-- ----------------------crew-------------------- -->
+     <div class=" absolute top-30 md:top-50  md:left-1/6
+          text-center md:text-left
+          grid grid-cols-1 md:grid-cols-2  items-center justify-center ">       
+
+     <div class="mb-20 mr-0 md:mr-20 ">
+    <p class="text-gray-400 text-[15px] md:text-[25px]  "> 02 Meet your crew</p>
+    <p class="role-crew text-[30px] text-gray-400  mt-10"> Commander</p>
+    <h1 class="head-crew text-6xl font-bold  text-white">Douglas Hurley</h1>
+    <p class="text-crew text-gray-400 p-3">   Douglas Gerald Hurley is an American engineer, former Marine Corps 
+      pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+
+  <div class="flex justify-center items-center gap-5 mt-5 [&>span]:cursor-pointer">
+    <span class="crew-dot activee block w-4 h-4 bg-gray-400 rounded-[100px]"></span>
+    <span class="crew-dot block w-4 h-4 bg-gray-400 rounded-[100px]"></span>
+    <span class="crew-dot block w-4 h-4 bg-gray-400 rounded-[100px]"></span>
+    <span class="crew-dot block w-4 h-4 bg-gray-400 rounded-[100px]"></span>
+  </div>
+
+</div>
+
+
+ 
+        <div class=" text-white text-center  mt-10 ml-auto mr-auto">
+            <img src="./assets/crew/image-douglas-hurley.png" class="img-crew 
+                  ml-auto mr-auto w-50 md:w-90">
+          </div> 
+
+     </div>
+
+      <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
