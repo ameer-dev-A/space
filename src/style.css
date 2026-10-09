@@ -1,11 +1,5 @@
 import "tailwindcss";
 
-@source "../index.html";
-@source "../destination.html";
-@source "../crew.html";
-@source "../technology.html";
-@source "./**/*.js";
-
 @utility active{
    color:grey;
    position: relative;
