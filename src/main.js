@@ -17,6 +17,7 @@ import './style.css'
       openn.addEventListener('click',()=>{
         menue.classList.add('h-screen','bg-black','justify-start','absolute','top-[-60px]','left-0','w-full');
         btnbarli();
+        menue.classList.remove('hidden');
         bar.classList.remove('hidden');
         closee.classList.remove('hidden');
         openn.classList.add('hidden');
@@ -78,12 +79,13 @@ function showtec(index){
   const tecn = data.technology[index];
   headtec.innerHTML = tecn.name;
   texttec.innerHTML = tecn.description;
-  imgtec.src = tecn.images.portrait;
+ imgtec.src = `${import.meta.env.BASE_URL}${tecn.images.portrait.replace(/^\.\//, '')}`;
 
   if(window.innerWidth<=768){
-  imgtec.src = tecn.images.landscape;
+  imgtec.src = `${import.meta.env.BASE_URL}${tecn.images.landscape.replace(/^\.\//, '')}`;
 }else{
-  imgtec.src = tecn.images.portrait;
+  imgtec.src = `${import.meta.env.BASE_URL}${tecn.images.portrait.replace(/^\.\//, '')}`;
+
 }
 }
 spans.forEach((ss,index)=>{
@@ -111,7 +113,7 @@ spans.forEach((ss,index)=>{
       role.textContent = member.role;
       headcrew.textContent = member.name;
       textcrew.textContent = member.bio;
-      imgcrew.src = member.images.png;
+     imgcrew.src = `${import.meta.env.BASE_URL}${member.images.png.replace(/^\.\//, '')}`;
     }
 
     dots.forEach((dot, indexc) => {
@@ -137,7 +139,7 @@ function showDestination(index) {
   textt.innerHTML = destination.description;
   bot1.innerHTML = ` ${destination.bot1} <br> <p class="text-2xl">${destination.distance}</p>`;
   bot2.innerHTML = ` ${destination.bot2} <br> <p class="text-2xl">${destination.travel}</p>`;
-  imgd.src = destination.images.png;
+ imgd.src = `${import.meta.env.BASE_URL}${destination.images.png.replace(/^\.\//, '')}`;
 }
 
 moon.addEventListener('click', () => showDestination(0));
