@@ -15,7 +15,7 @@ import './style.css'
       })
       }
       openn.addEventListener('click',()=>{
-        menue.classList.add('h-screen','bg-black','justify-start','absolute','top-[-60px]','left-0','w-full');
+        menue.classList.add('h-screen','bg-black','justify-start','absolute','top-[-10px]','left-0','w-full');
         btnbarli();
         menue.classList.remove('hidden');
         bar.classList.remove('hidden');
