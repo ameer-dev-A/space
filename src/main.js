@@ -52,9 +52,14 @@ import './style.css'
        let imgd = document.querySelector('.imgd');
 
 fetch(`${import.meta.env.BASE_URL}data.json`)
- .then(response => response.json())
- .then(data => {
-
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then(data => {
+    
 
 
 
@@ -151,4 +156,6 @@ titan.addEventListener('click', () => showDestination(3));
 
 
 
- })
+ }).catch(error => {
+  console.error('Error loading data:', error);
+});
