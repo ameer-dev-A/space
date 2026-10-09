@@ -1,4 +1,8 @@
 @import "tailwindcss"; 
+@source "../index.html";
+@source "../destination.html";
+@source "../crew.html";
+@source "../technology.html";
 
 .active { color: grey; position: relative; }
 
