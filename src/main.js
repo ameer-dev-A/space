@@ -51,7 +51,7 @@ import './style.css'
        let bot2 = document.querySelector('.bot2');
        let imgd = document.querySelector('.imgd');
 
-fetch("data.json")
+fetch(`${import.meta.env.BASE_URL}data.json`)
  .then(response => response.json())
  .then(data => {
 
