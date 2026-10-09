@@ -1,7 +1,5 @@
 @import "tailwindcss";
-body {
-  background-color: red !important;
-}
+
 .active { color: grey; position: relative; }
 
 .active::after { content: ""; background-color: grey; width: 100%; height: 2px; position: absolute; top: 30px; left: 0; }
